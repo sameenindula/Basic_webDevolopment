@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, css, js, web page">
+    <meta name="description" content="This is my web page development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            padding: 5px 0;
+        }
+        .nav_bar {
+            list-style-type: none;
+        }
+        .nav_bar > li:hover {
+            color: rgb(238, 48, 48);
+            cursor: pointer;
+        }
+        .nav_bar > li {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: 100;
+        }
+        .logo {
+            width: 30%;
+        }
+        .nav {
+            width: 70%;
+        }
+        .home_imge {
+            
+            height: 700px;;
+            background-image: url('./image.png'); /* Make sure this path is correct */
+            background-size: cover;
+            position: relative;
+        }
+        .home_text{
+            width: 40%;
+            background-color: rgba(128, 105, 182, 0.13);
+            padding: 25px 30px;
+            position: absolute;
+            right: 50px;
+            top: 250px;
+            border-radius: 10px;
+            text-align: end;
+            
+        }
+        .home_text>a{
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 20px;
+            
+            
+        }
+        .home_text>a:hover{
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .content{
+            display: flex;
+        }
+        .col-1{
+            width: 60%;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(250, 235, 215, 0.295);
+            text-align: justify;
+        }
+        .col-2{
+            width: 40%;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(250, 235, 215, 0.295);
+            text-align: justify;
+        }
+        @media(max-width:425px){
+            .header{
+                display: block;
+            }
+            .logo,.nav{
+                width: 100%;
+                text-align  : center;
+            }
+            .home_imge{
+                height: 400px;
+                background-position: bottom;
+
+            }
+            .home_text{
+                top: 10px;
+                right: 10px;
+                width: auto;
+                left: 10px;
+            }
+        .content{
+            display: block;
+        }
+        .col-1,.col-2{
+            width: auto;
+        }
+            
+        }
+    </style>
+</head>
+<body style="margin: 0;">
+    <div class="header">
+        <div class="logo">
+            <img src="https://www.ijse.lk/images/logos/ijse@1x.png" alt="IJSE Logo">
+        </div>
+        <div class="nav">
+            <ul class="nav_bar">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="home_imge">
+            <div class="home_text">
+                <h1>Welcome to IJSE</h1>
+                <p>
+                    The Home of Software Engineering in Sri Lanka. Our mission being “Contributing the most capable and reliable software engineers with profound knowledge in the most recent technologies who can match up to.
+                </p>
+                <a href="ijse.html">visit ijse</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="col-1">
+                <p>Considering the rapidly evolving technology, advancing in the IT industry and obtaining a degree in software engineering from IJSE will expose you to many possibilities </p>
+            </div>
+            <div class="col-2">
+                <p>Considering the rapidly evolving technology, advancing in the IT industry and obtaining a degree in software engineering from IJSE will expose you to many possibilities </p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
